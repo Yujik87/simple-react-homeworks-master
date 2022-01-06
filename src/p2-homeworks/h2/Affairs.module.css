@@ -1,0 +1,45 @@
+.affairItem {
+
+}
+
+.affairList {
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+.affairList div {
+    width: 100px;
+}
+
+.item {
+    margin-left: auto;
+
+}
+
+.active {
+
+}
+
+.activeButton {
+
+}
+
+.deleteButton {
+    background-color: darkorange;
+    color: black;
+    width: 50px;
+    margin-right: 0;
+}
+
+.high {
+    color: red;
+}
+
+.middle {
+    color: darkblue;
+}
+
+.low {
+    color: darkgreen;
+}
