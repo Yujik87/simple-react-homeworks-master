@@ -9,9 +9,9 @@
 }
 
 img {
-    border-radius: 50px;
-    width: 70px;
-    hight: 70px;
+    border-radius: 50%;
+    width: 50px;
+    hight: 50px;
     border: 2px solid black;
 }
 
@@ -25,31 +25,34 @@ img {
     color: blueviolet;
 }
 
+.text {
+    word-wrap: break-word;
+    min-width: 250px;
+    max-width: 450px;
+}
+
 .bubble {
     position: relative;
     background: #000000;
     color: #FFFFFF;
     font-family: Arial;
-    font-size: 25px;
-    line-height: 5px;
-    text-align: left;
-    width: 250px;
-    height: 100px;
-    border-radius: 10px;
-    padding: 5px;
-    margin-left: 15px;
+    font-size: 20px;
+    border-radius: 15px;
+    border-bottom-left-radius: 0px;
+    padding: 10px;
+    margin-left: 20px;
 }
 
 .bubble:after {
     content: '';
     position: absolute;
     display: block;
-    width: 0;
+    width: 0px;
     z-index: 1;
     border-style: solid;
     border-width: 0 0 20px 20px;
     border-color: transparent transparent #000000 transparent;
-    top: 85%;
+    top: 98%;
     left: -20px;
-    margin-top: -10px;
+    margin-top: -15px;
 }

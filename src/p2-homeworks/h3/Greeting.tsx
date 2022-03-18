@@ -18,7 +18,7 @@ const Greeting: React.FC<GreetingPropsType> = (
 
     return (
         <div className={s.someClass}>
-            <div>
+            <div className={s.someClassInput}>
                 <input
                     value={name}
                     onChange={setNameCallback}
@@ -26,9 +26,12 @@ const Greeting: React.FC<GreetingPropsType> = (
                     onKeyDown={onEnter}
                     onBlur={setNameCallback}
                 />
-                <div className={s.error}>{error}</div>
+                <div className={s.errorInput}>
+                    {error}
+                </div>
+                <button onClick={addUser} disabled={!name}>add</button>
             </div>
-            <button onClick={addUser} disabled={!name}>add</button>
+
             <span>{totalUsers}</span>
         </div>
     )

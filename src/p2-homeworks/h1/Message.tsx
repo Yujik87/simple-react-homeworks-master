@@ -14,7 +14,7 @@ function Message(props: MessagePropsType) {
             <img className={s.img} src={props.avatar} alt=""/>
             <div className={s.bubble}>
                 <p className={s.userName}>{props.name}</p>
-                <p>{props.message}</p>
+                <p className={s.text}>{props.message}</p>
                 <p className={s.timeMessage}>{props.time}</p>
             </div>
         </div>

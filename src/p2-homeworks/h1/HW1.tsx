@@ -1,10 +1,13 @@
 import React from 'react'
 import Message from "./Message";
+import AlternativeAffairs from "../h2/AlternativeAffairs";
+import AlternativeMessage from "./AlternativeMessage";
+
 
 const messageData = {
     avatar: 'https://sun9-74.userapi.com/Ph-WiuOtF985il9AvN9JqiCWedmHtSGSSTXrSA/ltEB2Z2-YO4.jpg',
     name: 'Some Name',
-    message: 'some text',
+    message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias deserunt dicta eius eum ex id incidunt itaque modi molestias quibusdam quisquam quos repellat repellendus saepe, similique!',
     time: '22:00',
 }
 
@@ -17,6 +20,15 @@ function HW1() {
             {/*should work (должно работать)*/}
 
             <Message
+                avatar={messageData.avatar}
+                name={messageData.name}
+                message={messageData.message}
+                time={messageData.time}
+            />
+
+            <hr/>
+
+            <AlternativeMessage
                 avatar={messageData.avatar}
                 name={messageData.name}
                 message={messageData.message}

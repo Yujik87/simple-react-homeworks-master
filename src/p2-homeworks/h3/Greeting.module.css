@@ -16,6 +16,12 @@
     align-items: flex-start;
 }
 
+.someClassInput {
+    border-radius: 15px;
+    background-color:  orange;
+    padding: 20px;
+}
+
 .error {
     border: 2px solid red;
     outline: none;
