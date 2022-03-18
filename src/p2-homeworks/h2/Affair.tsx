@@ -5,18 +5,19 @@ import s from './Affairs.module.css'
 type AffairPropsType = {
     // key не нужно типизировать
     affair: AffairType
-    deleteAffairCallback: (id: number) => void
+    deleteAffairCallback: (_id: number) => void
 }
 
 function Affair(props: AffairPropsType) {
-    const deleteCallback = () => props.deleteAffairCallback(props.affair._id)
+    const deleteCallback = () => {props.deleteAffairCallback(props.affair._id)}
 
-    const priorityClass = s.item + ' ' + s[props.affair.priority]
+    //const stylePriority =
 
     return (
-        <div className={s.affairList}>
-            <div className={s.affairItem}>{props.affair.name}</div>
-            <div className={priorityClass}>{props.affair.priority}</div>
+        <div className={s.container}>
+            <div className={s.name}>{props.affair.name}</div>
+            <div className={s[props.affair.priority]}>{props.affair.priority}</div>
+
             <button className={s.deleteButton} onClick={deleteCallback}>X</button>
         </div>
     )

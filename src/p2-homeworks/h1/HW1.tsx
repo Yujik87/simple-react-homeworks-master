@@ -15,7 +15,7 @@ function HW1() {
     return (
         <div>
             <hr/>
-            homeworks 1
+            <h3>Homework 1</h3>
 
             {/*should work (должно работать)*/}
 
@@ -26,6 +26,8 @@ function HW1() {
                 time={messageData.time}
             />
 
+
+
             <hr/>
 
             <AlternativeMessage
@@ -34,8 +36,6 @@ function HW1() {
                 message={messageData.message}
                 time={messageData.time}
             />
-
-            <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeMessage/>*/}
             <hr/>
