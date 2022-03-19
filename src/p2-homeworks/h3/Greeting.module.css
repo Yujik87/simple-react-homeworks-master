@@ -1,8 +1,23 @@
 .container {
     display: flex;
     align-items: flex-start;
+    justify-content: center;
+    max-width: 250px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: auto;
+}
+
+.button{
+    margin-left: 5px;
 }
 
 .error {
     border: 2px solid red;
+}
+
+.info {
+    color: darkred;
+
 }

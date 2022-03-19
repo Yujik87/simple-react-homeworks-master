@@ -27,13 +27,13 @@ const Greeting: React.FC<GreetingPropsType> = (
                     onKeyDown={onEnter}
                     className={inputClass}
                 />
-                <div className={s.info}>
-                    {error ? error: `Total users: ${totalUsers}`}
+                <div className={error ? s.info : ''}>
+                    {error ? error : `Total users: ${totalUsers}`}
                 </div>
             </div>
 
             <div>
-                <button className={s.button} onClick={addUser} disabled={!name}>add</button>
+                <button className={s.button} onClick={addUser} disabled={!name}>Add user</button>
             </div>
 
         </div>
