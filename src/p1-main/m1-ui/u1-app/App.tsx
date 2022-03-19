@@ -8,9 +8,9 @@ function App() {
     return (
         <div className={s.App}>
             <div>React homeworks:</div>
-            <HW1/>
-            <HW2/>
-            {/*<HW3/>*/}
+            {/*<HW1/>*/}
+            {/*<HW2/>*/}
+            <HW3/>
             {/*<HW4/>*/}
             {/*<HW5/>*/}
 
